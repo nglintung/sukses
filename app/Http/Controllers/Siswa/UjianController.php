@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Siswa;
 
 use App\Siswa;
+use App\Ujian1;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Auth;
 
 class UjianController extends Controller
 {
@@ -25,12 +27,16 @@ class UjianController extends Controller
      */
     public function showUsk()
     {
-        return view('siswa.ujian.usk');
+        $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        $datausk = Ujian1::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        return view('siswa.ujian.usk')->with(compact('datausk'));
     }
 
     public function showUps()
     {
-        return view('siswa.ujian.ups');
+        $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        $dataups = Ujian1::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        return view('siswa.ujian.ups')->with(compact('dataups'));
     }
 
     public function showUkk1()

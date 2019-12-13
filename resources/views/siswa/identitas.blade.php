@@ -47,7 +47,7 @@
                           <b>Kelas</b> <a class="float-right">{{$datasiswa->kelas}}</a>
                         </li>
                         <li class="list-group-item">
-                            <b>Tempat&Tanggal Lahir</b> <a class="float-right">{{$datasiswa->tempat}}, {{$datasiswa->ttl}}</a>
+                            <b>Tempat & Tanggal Lahir</b> <a class="float-right">{{$datasiswa->tempat}}, {{$datasiswa->ttl}}</a>
                         </li>
                         <li class="list-group-item">
                           <b>Nama Orang tua</b> <a class="float-right">{{$datasiswa->namaortu}}</a>
