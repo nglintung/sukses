@@ -41,8 +41,15 @@
                             <th>{{ $setpass->name}}</th>
                             <th class=" text-center">{{ $setpass->kelas}}</th>
                             <th>
-                                <a href="/admin/setpass/edit/{{ $setpass->id}}" class="btn-sm btn-success ml-2">Edit</a>
-                                <a href="/admin/setpass/delete/{{ $setpass->id}}" onclick="return confirm('Apakah anda ingin menghapus data ini?');" class="btn-sm btn-danger">Hapus</a>
+                                <form class="d-inline-block" action="{{ route('admin.editpass', $setpass->id)}} " method="get">
+                                    <button class="btn-sm btn-info" type="submit">Detail</button>
+                                </form>
+                                <form class="d-inline-block" action="{{ route('admin.destroypass', $setpass->id)}}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn-sm btn-danger" type="submit" onclick="return confirm('Apakah anda ingin menghapus data ini?');">Hapus</button>
+                                </form>
+                                {{-- <a href="/admin/setpass/delete/{{ $setpass->id}}" onclick="return confirm('Apakah anda ingin menghapus data ini?');" class="btn-sm btn-danger">Hapus</a> --}}
                             </th>
                         </tr>
                         @endforeach

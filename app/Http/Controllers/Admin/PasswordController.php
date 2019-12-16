@@ -86,9 +86,10 @@ class PasswordController extends Controller
      * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
-    public function edit(Siswa $siswa)
+    public function edit($id)
     {
-        //
+        $cariuser = Siswa::findOrFail($id)->first();
+        return \view('admin.setpass.edit')->with(compact('cariuser'));
     }
 
     /**
@@ -98,9 +99,18 @@ class PasswordController extends Controller
      * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'password' => 'required'
+        ]);
+
+        $siswa = Siswa::find($id);
+        $siswa->password = $request->get('password');
+
+        $siswa->save();
+
+        return redirect()->route('admin.indexpass');
     }
 
     /**
@@ -109,5 +119,10 @@ class PasswordController extends Controller
      * @param  \App\Siswa  $siswa
      * @return \Illuminate\Http\Response
      */
+    public function destroy($id)
+    {
+        $cariuser = Siswa::findOrFail($id)->update(['password'=>null]);
+        return redirect()->back();
+    }
 
 }

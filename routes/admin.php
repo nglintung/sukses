@@ -16,7 +16,10 @@ Route::group(['namespace' => 'Admin'], function() {
     Route::get('/setpass', 'PasswordController@index')->name('admin.indexpass');
     Route::post('/setpass', 'PasswordController@store')->name('admin.storepass');
     Route::get('/setpass/create', 'PasswordController@create')->name('admin.createpass');
-    Route::get('/setpass/reser', 'PasswordController@resetPasswordAll')->name('admin.resetpass');
+    Route::get('/setpass/reset', 'PasswordController@resetPasswordAll')->name('admin.resetpass');
+    Route::get('/setpass/edit/{id}', 'PasswordController@edit')->name('admin.editpass');
+    Route::PUT('/setpass', 'PasswordController@update')->name('admin.updatepass');
+    Route::DELETE('/setpass/delete/{id}', 'PasswordController@destroy')->name('admin.destroypass');
 
     // Login
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('admin.login');
