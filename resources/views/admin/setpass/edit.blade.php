@@ -29,7 +29,7 @@
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
-            <form method="POST" action="{{ route('admin.updatepass'), $cariuser->id }}" class="ml-2">
+            <form method="GET" action="{{ route('admin.updatepass'), $cariuser->id }}" class="ml-2">
                     @csrf
                     <div class="form-row">
                         <div class="form-group">

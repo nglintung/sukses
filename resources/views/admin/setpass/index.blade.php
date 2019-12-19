@@ -41,9 +41,7 @@
                             <th>{{ $setpass->name}}</th>
                             <th class=" text-center">{{ $setpass->kelas}}</th>
                             <th>
-                                <form class="d-inline-block" action="{{ route('admin.editpass', $setpass->id)}} " method="get">
-                                    <button class="btn-sm btn-info" type="submit">Detail</button>
-                                </form>
+                                <a href="{{route('admin.indexpass')}}/edit/{{$setpass->id}}" class="btn btn-primary">Edit</a>
                                 <form class="d-inline-block" action="{{ route('admin.destroypass', $setpass->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
@@ -55,13 +53,14 @@
                         @endforeach
                     </tbody>
                 </table>
-                <div class="float-left">{{ $datapass->links() }}</div>
-                <br>
+                <div class="float-left mb-3">{{ $datapass->links() }}</div>
+            </div>
 
+            <div class="row">
                 <input class="form-control col-lg-3 mb-1" type="password" name="password" id="password" placeholder="Masukan Kode Rahasia">
                 <button class="btn-danger" type="button" id="reset">HAPUS SEMUA PASSWORD</button>
-                {{-- <a href="{{ route('admin.resetpass')}}" class="btn btn-danger">RESET SEMUA PASSWORD</a> --}}
             </div>
+                {{-- <a href="{{ route('admin.resetpass')}}" class="btn btn-danger">RESET SEMUA PASSWORD</a> --}}
 @endsection
 
 @section('isi_script')

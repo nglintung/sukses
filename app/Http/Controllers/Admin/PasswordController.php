@@ -88,7 +88,7 @@ class PasswordController extends Controller
      */
     public function edit($id)
     {
-        $cariuser = Siswa::findOrFail($id)->first();
+        $cariuser = Siswa::find($id);
         return \view('admin.setpass.edit')->with(compact('cariuser'));
     }
 
