@@ -85,9 +85,9 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item" style="margin-left:10px">
-                    <a href="{{ route('ujian.ukk1') }}" class="nav-link">
+                    <a href="{{ route('ujian.ukk2') }}" class="nav-link">
                         <i class="far fa-check-square nav-icon"></i>
-                        <p>UKK Sekolah Tahap 1</p>
+                        <p>UKK Sekolah Tahap 2</p>
                     </a>
                     </li>
                     <li class="nav-item" style="margin-left:10px">

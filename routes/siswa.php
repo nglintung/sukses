@@ -8,7 +8,7 @@ Route::group(['namespace' => 'Siswa'], function() {
     // Ujian - ujian
     Route::get('/usk', 'UjianController@showUsk')->name('ujian.usk');
     Route::get('/ups', 'UjianController@showUps')->name('ujian.ups');
-    Route::get('/ukk1', 'UjianController@showUkk1')->name('ujian.ukk1');
+    Route::get('/ukk2', 'UjianController@showUkk2')->name('ujian.ukk2');
     Route::get('/tpp', 'UjianController@showTpp')->name('ujian.tpp');
     Route::get('/ukknas', 'UjianController@showUkknas')->name('ujian.ukknas');
     Route::get('/tryout1', 'UjianController@showTryout1')->name('ujian.tryout1');
