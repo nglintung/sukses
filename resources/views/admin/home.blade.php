@@ -64,6 +64,23 @@
                 </div>
             </div>
 
+            <div class="col-lg-3 col-6">
+                <!-- small card -->
+                <div class="small-box bg-warning">
+                    <div class="inner">
+                    <h3> {{$listusk}} </h3>
+
+                    <p>Password Siswa USK</p>
+                    </div>
+                    <div class="icon">
+                    <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <a href="{{ route('admin.indexusk') }}" class="small-box-footer">
+                    Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
         <!-- /.row -->
         </div>

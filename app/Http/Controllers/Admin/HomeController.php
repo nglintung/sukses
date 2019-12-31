@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Siswa;
+use App\Uskamikom;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 
@@ -30,7 +31,10 @@ class HomeController extends Controller
     public function index() {
         $siswacount = Siswa::all()->count();
         $listpassword = Siswa::whereNotNull('password')->count();
-        return view('admin.home')->with(compact('siswacount'))->with(compact('listpassword'));
+        $listusk = Uskamikom::whereNotNull('password')->count();
+        return view('admin.home')->with(compact('siswacount'))
+                                ->with(compact('listpassword'))
+                                ->with(compact('listusk'));
     }
 
     public function daftarSiswa(){

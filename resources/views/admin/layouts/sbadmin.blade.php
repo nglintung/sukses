@@ -145,6 +145,29 @@
 
                         </ul>
                     </li>
+
+                    <!-- USK Password -->
+                                        <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                                <i class="fas fa-key nav-icon text-warning"></i>
+                                <p>Password USK<i class="right fas fa-arrow-circle-left text-warning"></i></p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item" style="margin-left:10px">
+                            <a href="{{ route('admin.indexusk')}} " class="nav-link">
+                                <i class="fas fa-th-list nav-icon"></i>
+                                <p>Daftar Password USK</p>
+                            </a>
+                            </li>
+                            <li class="nav-item" style="margin-left:10px">
+                            <a href="{{ route('admin.createusk')}}" class="nav-link">
+                                <i class="fas fa-user-plus nav-icon"></i>
+                                <p>Generate Password USK</p>
+                            </a>
+                            </li>
+
+                        </ul>
+                    </li>
                 </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
