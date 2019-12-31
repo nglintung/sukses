@@ -51,6 +51,9 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        'uskamikom.auth' => \App\Http\Middleware\RedirectIfNotUskamikom::class,
+        'uskamikom.guest' => \App\Http\Middleware\RedirectIfUskamikom::class,
+        // 'uskamikom.verified' => \App\Http\Middleware\EnsureUskamikomEmailIsVerified::class,
         'siswa.auth' => \App\Http\Middleware\RedirectIfNotSiswa::class,
         'siswa.guest' => \App\Http\Middleware\RedirectIfSiswa::class,
         // 'siswa.verified' => \App\Http\Middleware\EnsureSiswaEmailIsVerified::class,

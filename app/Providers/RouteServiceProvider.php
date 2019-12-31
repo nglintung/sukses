@@ -39,6 +39,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapUskamikomRoutes();
+
         $this->mapSiswaRoutes();
 
         $this->mapAdminRoutes();
@@ -74,6 +76,21 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/siswa.php'));
+    }
+
+    /**
+     * Define the "uskamikom" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapUskamikomRoutes()
+    {
+        Route::prefix('uskamikom')
+             ->middleware('web')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/uskamikom.php'));
     }
 
     /**

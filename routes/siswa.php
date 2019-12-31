@@ -6,7 +6,8 @@ Route::group(['namespace' => 'Siswa'], function() {
     Route::get('/identitas', 'HomeController@identitas')->name('siswa.identitas');
 
     // Ujian - ujian
-    Route::get('/usk', 'UjianController@showUsk')->name('ujian.usk');
+    // Route::get('/usk', 'UjianController@showUsk')->name('ujian.usk');
+
     Route::get('/ups', 'UjianController@showUps')->name('ujian.ups');
     Route::get('/ukk2', 'UjianController@showUkk2')->name('ujian.ukk2');
     Route::get('/tpp', 'UjianController@showTpp')->name('ujian.tpp');

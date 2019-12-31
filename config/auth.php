@@ -36,6 +36,11 @@ return [
     */
 
     'guards' => [
+        'uskamikom' => [
+            'driver' => 'session',
+            'provider' => 'uskamikoms',
+        ],
+
         'siswa' => [
             'driver' => 'session',
             'provider' => 'siswas',
@@ -76,6 +81,11 @@ return [
     */
 
     'providers' => [
+        'uskamikoms' => [
+            'driver' => 'eloquent',
+            'model' => App\Uskamikom::class,
+        ],
+
         'siswas' => [
             'driver' => 'eloquent',
             'model' => App\Siswa::class,
@@ -113,6 +123,12 @@ return [
     */
 
     'passwords' => [
+        'uskamikoms' => [
+            'provider' => 'uskamikoms',
+            'table' => 'uskamikom_password_resets',
+            'expire' => 60,
+        ],
+
         'siswas' => [
             'provider' => 'siswas',
             'table' => 'siswa_password_resets',

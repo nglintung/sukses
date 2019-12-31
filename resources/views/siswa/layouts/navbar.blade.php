@@ -63,12 +63,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="{{ route('ujian.usk') }} " class="nav-link">
-                            <i class="nav-icon fas fa-id-card-alt text-info"></i>
-                            <p class="text">USK Univ. AMIKOM</p>
-                        </a>
-                    </li>
 
                 <li class="nav-item">
                     <a href="{{ route('ujian.ups') }}" class="nav-link">
