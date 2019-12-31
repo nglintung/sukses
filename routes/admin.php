@@ -26,7 +26,7 @@ Route::group(['namespace' => 'Admin'], function() {
     Route::post('/uskpass', 'UskController@store')->name('admin.storeusk');
     Route::DELETE('/uskpass/delete/{id}', 'UskController@destroy')->name('admin.destroyusk');
     Route::get('/uskpass/create', 'UskController@create')->name('admin.createusk');
-    Route::get('/setpass/reset', 'UskController@resetPasswordAll')->name('admin.resetusk');
+    Route::get('/uskpass/reset', 'UskController@resetPasswordAll')->name('admin.resetusk');
 
     Route::get('/uskpass/test', 'UskController@show');
 

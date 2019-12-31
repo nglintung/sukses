@@ -70,7 +70,7 @@ document.getElementById("reset").addEventListener("click",function(evt){
     // For each different code, use location.href to redirect the user
     switch (codeEntered) {
         case "1324":
-            location.href = "{{ route('admin.resetpass')}}";
+            location.href = "{{route('admin.resetpass')}}";
             break;
         default:
             alert("Kode Hapus Salah");
