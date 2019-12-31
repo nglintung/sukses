@@ -1,73 +1,88 @@
-@extends('uskamikom.layouts.app')
+@extends('uskamikom.layouts.sbadmin')
+@section('title')
+<title>USK AMIKOM | Log in</title>
+@endsection
+
+@section('other_style')
+    <style>
+    .login-page {
+        height: 100%;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:url({{ url('img/background1.jpeg')}});
+    }
+    .login-logo a {
+        color:whitesmoke;
+        font-weight: 300;
+        font-size: 27pt;
+    }
+
+    </style>
+@endsection
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<body class="login-page fixed-top">
+    <div class="login-box">
+      <div class="login-logo">
+        <a href="#"><strong>USK AMIKOM 2020</strong></a>
+      </div>
+      <!-- /.login-logo -->
+      <div class="card">
+        <div class="card-body login-card-body">
+          <p class="login-box-msg">Login dengan NIS</p>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('uskamikom.login') }}" aria-label="{{ __('Login') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="nis_id" class="col-sm-4 col-form-label text-md-right">{{ __('NIS ID') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="nis_id" class="form-control{{ $errors->has('nis_id') ? ' is-invalid' : '' }}" name="nis_id" value="{{ old('nis_id') }}" required autofocus>
-
-                                @if ($errors->has('nis_id'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('nis_id') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('uskamikom.password.request'))
-                                    <a class="btn btn-link" href="{{ route('uskamikom.password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+          <form method="POST" action="{{ route('uskamikom.login') }}" aria-label="{{ __('Login') }}">
+            @csrf
+            <div class="input-group mb-3">
+              <input id="nis_id" type="nis_id" class="form-control{{ $errors->has('nis_id') ? ' is-invalid' : '' }}" name="nis_id" value="{{ old('nis_id') }}" required autofocus>
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-user-shield"></span>
                 </div>
+              </div>
+              @if ($errors->has('nis_id'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('nis_id') }}</strong>
+                    </span>
+                @endif
             </div>
+            <div class="input-group mb-3">
+              <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Masukan Password" required>
+              <div class="input-group-append">
+                <div class="input-group-text">
+                  <span class="fas fa-key"></span>
+                </div>
+              </div>
+              @if ($errors->has('password'))
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $errors->first('password') }}</strong>
+                    </span>
+                @endif
+            </div>
+            <div class="row">
+              <div class="col-8">
+                <div class="icheck-primary">
+                  <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                  <label class="form-check-label" for="remember">
+                    {{ __('Remember Me') }}
+                </label>
+                </div>
+              </div>
+              <!-- /.col -->
+              <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">
+                    {{ __('Login') }}
+                </button>
+              </div>
+              <!-- /.col -->
+            </div>
+          </form>
+
         </div>
+        <!-- /.login-card-body -->
+      </div>
     </div>
-</div>
+    <!-- /.login-box -->
 @endsection

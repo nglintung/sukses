@@ -4,6 +4,9 @@ Route::group(['namespace' => 'Uskamikom'], function() {
 
     Route::get('/', 'HomeController@index')->name('uskamikom.dashboard');
 
+    Route::get('/detailusk', 'HomeController@showUsk')->name('uskamikom.detailusk');
+
+
     // Login
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('uskamikom.login');
     Route::post('login', 'Auth\LoginController@login');
