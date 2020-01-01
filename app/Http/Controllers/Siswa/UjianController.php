@@ -43,20 +43,23 @@ class UjianController extends Controller
 
     public function showUkk2()
     {
-        $idsiswa = Auth::guard('siswa')->user()->nis_id;
-        $dataukk2 = Ujian2::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
-        // return ($dataukk2);
-        return view('siswa.ujian.ukk2')->with(compact('dataukk2'));
+        // $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        // $dataukk2 = Ujian2::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        // return view('siswa.ujian.ukk2')->with(compact('dataukk2'));
+
+        return view('siswa.ujian.restricted');
     }
 
     public function showTpp()
     {
-        return view('siswa.ujian.tpp');
+        // return view('siswa.ujian.tpp');
+        return view('siswa.ujian.restricted');
     }
 
     public function showUkknas()
     {
-        return view('siswa.ujian.ukknas');
+        // return view('siswa.ujian.ukknas');
+        return view('siswa.ujian.restricted');
     }
 
     public function showTryout1()
