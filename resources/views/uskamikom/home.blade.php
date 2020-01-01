@@ -28,8 +28,9 @@
                 <div class="card">
                 <div class="card-header bg-warning">Pengumuman !!</div>
                     <div class="card-body" >
-                        <p class="card-text">Terima Kasih telah melakukan pembayaran Ujian Sertifikasi Komputer.</p>
-                        <p class="card-text">Detail jadwal, ruang dan waktu Ujian Sertifikasi Komputer bisa bisa diakses melalui tombol "Detail jadwal USK"</p>
+                        <p class="card-text">Terimakasih telah menyelesaikan administrasi Ujian Sertifikasi Komputer (USK) Universitas AMIKOM Purwokerto "<b>Sarana Pasti Meraih Prestasi</b>"</p>
+                        <p class="card-text">Untuk detail Jadwal Ujian Tertulis dan Praktik silahkan klik 3 strip garis kiri atas kemudian klik detail jadwal.</p>
+                        <p class="card-text">Demikian terimakasih, semoga sukses selalu.</p>
                     </div>
                 </div>
             </div>
