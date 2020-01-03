@@ -72,31 +72,16 @@
                 </li>
 
                 <!-- Start UKK -->
-                <li class="nav-item has-treeview">
-                <a href="" class="nav-link">
+                <li class="nav-item">
+                <a href="{{ route('ujian.ukk2') }}" class="nav-link">
                     <i class="nav-icon fas fa-prescription text-primary"></i>
-                    <p>Uji Komp. Kej. (UKK)<i class="right fas fa-angle-left"></i></p>
+                    <p>UKK Sekolah</p>
                 </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item" style="margin-left:10px">
-                    <a href="{{ route('ujian.ukk2') }}" class="nav-link">
-                        <i class="far fa-check-square nav-icon"></i>
-                        <p>UKK Sekolah Tahap 2</p>
-                    </a>
-                    </li>
-                    <li class="nav-item" style="margin-left:10px">
-                    <a href="{{ route('ujian.tpp') }}" class="nav-link">
-                        <i class="far fa-check-square nav-icon"></i>
-                        <p>Teori Pengantar Praktek</p>
-                    </a>
-                    </li>
-                    <li class="nav-item" style="margin-left:10px">
-                    <a href="{{ route('ujian.ukknas') }}" class="nav-link">
-                        <i class="far fa-check-square nav-icon"></i>
-                        <p>UKK Nasional</p>
-                    </a>
-                    </li>
-                </ul>
+                <li class="nav-item">
+                <a href="{{ route('ujian.ukknas') }}" class="nav-link">
+                    <i class="nav-icon fas fa-prescription text-fuchsia"></i>
+                    <p>UKK Nasional</p>
+                </a>
                 </li>
                 <!-- End UKK -->
 

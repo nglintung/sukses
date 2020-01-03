@@ -53,8 +53,8 @@ class UjianController extends Controller
 
     public function showTpp()
     {
-        return view('siswa.ujian.tpp');
-        // return view('siswa.ujian.restricted');
+        // return view('siswa.ujian.tpp');
+        return view('siswa.ujian.restricted');
     }
 
     public function showUkknas()
