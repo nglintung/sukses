@@ -25,11 +25,19 @@
         <section class="content ml-3">
             <div class="container-fluid">
                 <div class="card">
-                <div class="card-header bg-danger">Perhatian !!</div>
+                <div class="card-header bg-primary">Teori Pengantar Praktek UKK Nasional</div>
                     <div class="card-body" >
-                        <h4 class="card-title">Mohon Maaf, untuk sementara Halaman ini belum dapat di tampilkan.</h4>
-                        <p class="card-text"></p>
-                    </div>
+                        <ul class="list-group list-group-unbordered mb-3">
+                            <li class="list-group-item">
+                                Ruang Ujian<a class="float-right text-bold">R. 1 s.d 6</a>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">Senin, 20 Januari 2020</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">Jam 08.00 s.d 10.00 WIB</a>
+                            </li>
+                        </ul>
                 </div>
             </div>
 

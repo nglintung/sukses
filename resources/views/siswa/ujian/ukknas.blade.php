@@ -25,12 +25,65 @@
         <section class="content ml-3">
             <div class="container-fluid">
                 <div class="card">
-                <div class="card-header bg-danger">Perhatian !!</div>
+                <div class="card-header bg-teal">UKK Nasional</div>
                     <div class="card-body" >
-                        <h4 class="card-title">Mohon Maaf, untuk sementara Halaman ini belum dapat di tampilkan.</h4>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
+                        <ul class="list-group list-group-unbordered mb-3">
+                            <li class="list-group-item">
+                                No Ujian<a class="float-right text-bold">{{ $ukknas->no_ujian }}</a>
+                            </li>
+                            {{-- Hari 1 --}}
+                            <li class="list-group-item">
+                                <h5 class="text-fuchsia text-bold">Ujian Bakteriologi Hari 1</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_bakteri1 }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_bakteri1 }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_bakteri1 }}</a>
+                            </li>
+                            {{-- Hari 2 --}}
+                            <li class="list-group-item">
+                                <h5 class="text-teal text-bold">Ujian Bakteriologi Hari 2</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_bakteri2 }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_bakteri2 }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_bakteri2 }}</a>
+                            </li>
+                            {{-- Hematologi --}}
+                            <li class="list-group-item">
+                                <h5 class="text-primary text-bold">Ujian Hematologi</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_hema }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_hema }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_hema }}</a>
+                            </li>
+                            {{-- Pembacaan Keputusan --}}
+                            <li class="list-group-item">
+                                <h5 class="text-warning text-bold">Pembacaan Keputusan</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">Sabtu, 25 Januari 2020</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">Jam 15.30 s.d selesai</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold">R. 1 s.d 6</a>
+                            </li>
+                        </ul>
             </div>
 
         </section>

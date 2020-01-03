@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Siswa;
 use App\Siswa;
 use App\Ujian1;
 use App\Ujian2;
+use App\ukknasional;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -52,14 +53,17 @@ class UjianController extends Controller
 
     public function showTpp()
     {
-        // return view('siswa.ujian.tpp');
-        return view('siswa.ujian.restricted');
+        return view('siswa.ujian.tpp');
+        // return view('siswa.ujian.restricted');
     }
 
     public function showUkknas()
     {
-        // return view('siswa.ujian.ukknas');
+        $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        $ukknas = ukknasional::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        // return view('siswa.ujian.ukknas')->with(compact('ukknas'));
         return view('siswa.ujian.restricted');
+        // return ($ukknas);
     }
 
     public function showTryout1()
