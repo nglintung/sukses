@@ -33,56 +33,57 @@
                             </li>
                             {{-- Hari 1 --}}
                             <li class="list-group-item">
-                                <h5 class="text-fuchsia text-bold">Ujian Bakteriologi Hari 1</h5>
+                                <h5 class="text-succes text-bold">Teori Pengantar Praktek</h5>
                             </li>
                             <li class="list-group-item">
-                                Hari<a class="float-right text-bold">{{ $ukknas->hari_bakteri1 }}</a>
+                                Ruang Ujian<a class="float-right text-bold">R. 1 s.d 6</a>
                             </li>
                             <li class="list-group-item">
-                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_bakteri1 }}</a>
+                                Hari<a class="float-right text-bold">Senin, 20 Januari 2020</a>
                             </li>
                             <li class="list-group-item">
-                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_bakteri1 }}</a>
+                                Waktu<a class="float-right text-bold">Jam 08.00 s.d 09.00 WIB</a>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="text-fuchsia text-bold">Pengambilan Sampel</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_sampel }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_sampel }}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_sampel }}</a>
                             </li>
                             {{-- Hari 2 --}}
                             <li class="list-group-item">
-                                <h5 class="text-teal text-bold">Ujian Bakteriologi Hari 2</h5>
+                                <h5 class="text-teal text-bold">Praktik USK</h5>
                             </li>
                             <li class="list-group-item">
-                                Hari<a class="float-right text-bold">{{ $ukknas->hari_bakteri2 }}</a>
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_praktikusk }}</a>
                             </li>
                             <li class="list-group-item">
-                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_bakteri2 }}</a>
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_praktikusk }}</a>
                             </li>
                             <li class="list-group-item">
-                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_bakteri2 }}</a>
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_praktikusk }}</a>
                             </li>
                             {{-- Hematologi --}}
                             <li class="list-group-item">
-                                <h5 class="text-primary text-bold">Ujian Hematologi</h5>
+                                <h5 class="text-primary text-bold">Pengamatan dan Penginputan</h5>
                             </li>
                             <li class="list-group-item">
-                                Hari<a class="float-right text-bold">{{ $ukknas->hari_hema }}</a>
+                                Hari<a class="float-right text-bold">{{ $ukknas->hari_input }}</a>
                             </li>
                             <li class="list-group-item">
-                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_hema }}</a>
+                                Waktu<a class="float-right text-bold">{{ $ukknas->waktu_input }}</a>
                             </li>
                             <li class="list-group-item">
-                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_hema }}</a>
+                                Ruang<a class="float-right text-bold">{{ $ukknas->ruang_input }}</a>
                             </li>
                             {{-- Pembacaan Keputusan --}}
-                            <li class="list-group-item">
-                                <h5 class="text-warning text-bold">Pembacaan Keputusan</h5>
-                            </li>
-                            <li class="list-group-item">
-                                Hari<a class="float-right text-bold">Sabtu, 25 Januari 2020</a>
-                            </li>
-                            <li class="list-group-item">
-                                Waktu<a class="float-right text-bold">Jam 15.30 s.d selesai</a>
-                            </li>
-                            <li class="list-group-item">
-                                Ruang<a class="float-right text-bold">R. 1 s.d 6</a>
-                            </li>
+
                         </ul>
             </div>
 

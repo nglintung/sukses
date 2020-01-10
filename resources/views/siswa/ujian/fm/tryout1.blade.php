@@ -6,7 +6,7 @@
 @section('bodytag')
 <body class="hold-transition sidebar-mini layout-navbar-fixed">
 <div class="wrapper">
-@include('siswa.layouts.navbar')
+@include('siswa.layouts.navbarfm')
 
 @section('content')
     <!-- Start Content -->
@@ -16,7 +16,7 @@
             <div class="container-fluid">
             <div class="row mb-2">
                     <div class="col-sm-12">
-                        <h3>Ujian Teori Pengantar Praktek</h3>
+                        <h3>Ujian TRY OUT UNBK Ke-1 </h3>
                 </div>
             </div><!-- /.container-fluid -->
         </section>
@@ -25,19 +25,11 @@
         <section class="content ml-3">
             <div class="container-fluid">
                 <div class="card">
-                <div class="card-header bg-primary">Teori Pengantar Praktek UKK Nasional</div>
+                <div class="card-header bg-danger">Perhatian !!</div>
                     <div class="card-body" >
-                        <ul class="list-group list-group-unbordered mb-3">
-                            <li class="list-group-item">
-                                Ruang Ujian<a class="float-right text-bold">R. 1 s.d 6</a>
-                            </li>
-                            <li class="list-group-item">
-                                Hari<a class="float-right text-bold">Senin, 20 Januari 2020</a>
-                            </li>
-                            <li class="list-group-item">
-                                Waktu<a class="float-right text-bold">Jam 08.00 s..00 WIB</a>
-                            </li>
-                        </ul>
+                        <h4 class="card-title">Mohon Maaf, untuk sementara Halaman ini belum dapat di tampilkan.</h4>
+                        <p class="card-text"></p>
+                    </div>
                 </div>
             </div>
 

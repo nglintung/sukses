@@ -27,6 +27,13 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
+        $ceklogin = Auth::guard('siswa')->user()->nis_id;
+        if($ceklogin >= 17210){
+
+            return view('siswa.homefarmasi');
+        }
+        else
+
         return view('siswa.home');
     }
 
@@ -34,6 +41,11 @@ class HomeController extends Controller
         $datalogin = Auth::guard('siswa')->user()->nis_id;
         $datasiswa = Siswa::where('nis_id', 'like', "%" . $datalogin . "%")->first();
         return view('siswa.identitas')->with(compact('datasiswa'));
+    }
+    public function identitasfm() {
+        $datalogin = Auth::guard('siswa')->user()->nis_id;
+        $datasiswa = Siswa::where('nis_id', 'like', "%" . $datalogin . "%")->first();
+        return view('siswa.identitasfm')->with(compact('datasiswa'));
     }
 
 

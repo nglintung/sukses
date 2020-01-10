@@ -16,7 +16,7 @@
             <div class="container-fluid">
             <div class="row mb-2">
                     <div class="col-sm-12">
-                        <h3>Ujian Kompetensi Kejuruan Tahap 2</h3>
+                        <h3>Ujian Kompetensi Kejuruan Sekolah</h3>
                 </div>
             </div><!-- /.container-fluid -->
         </section>
@@ -25,7 +25,7 @@
         <section class="content ml-3">
             <div class="container-fluid">
                 <div class="card">
-                <div class="card-header bg-fuchsia">UKK Tahap 2</div>
+                <div class="card-header bg-fuchsia">UKK Sekolah</div>
                     <div class="card-body" >
                         <ul class="list-group list-group-unbordered mb-3">
                             <li class="list-group-item">
@@ -44,7 +44,7 @@
                                 Waktu<a class="float-right text-bold">{{$dataukk2->waktu_tpp}}</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-indigo text-bold">UJIAN BAKTERIOLOGI Hari Pertama</h5>
+                                <h5 class="text-indigo text-bold">Pengambilan Sampel</h5>
                             </li>
                             <li class="list-group-item">
                                 Ruangan Ujian<a class="float-right text-bold">{{$dataukk2->ruang_bakteri1}}</a>
@@ -56,7 +56,7 @@
                                 Waktu<a class="float-right text-bold">{{$dataukk2->waktu_bakteri1}}</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-info text-bold">UJIAN BAKTERIOLOGI Hari Kedua</h5>
+                                <h5 class="text-info text-bold">Praktik USK</h5>
                             </li>
                             <li class="list-group-item">
                                 Ruangan Ujian<a class="float-right text-bold">{{$dataukk2->ruang_bakteri2}}</a>
@@ -68,7 +68,7 @@
                                 Waktu<a class="float-right text-bold">{{$dataukk2->waktu_bakteri2}}</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-warning text-bold">UJIAN HEMATOLOGI</h5>
+                                <h5 class="text-warning text-bold">Pengamatan dan Penginputan</h5>
                             </li>
                             <li class="list-group-item">
                                 Ruangan Ujian<a class="float-right text-bold">{{$dataukk2->ruang_hematologi}}</a>

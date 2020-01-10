@@ -4,6 +4,7 @@ Route::group(['namespace' => 'Siswa'], function() {
 
     Route::get('/', 'HomeController@index')->name('siswa.dashboard');
     Route::get('/identitas', 'HomeController@identitas')->name('siswa.identitas');
+    Route::get('/identitasfm', 'HomeController@identitasfm')->name('siswa.identitasfm');
 
     // Ujian - ujian
     // Route::get('/usk', 'UjianController@showUsk')->name('ujian.usk');
@@ -18,6 +19,15 @@ Route::group(['namespace' => 'Siswa'], function() {
     Route::get('/gladi', 'UjianController@showGladi')->name('ujian.gladi');
     Route::get('/unbk', 'UjianController@showUnbk')->name('ujian.unbk');
     Route::get('/usbn', 'UjianController@showUsbn')->name('ujian.usbn');
+
+    Route::get('/ukk-fm/sekolah', 'UjianfmController@showUkksfm')->name('ujian.ukksfm');
+    Route::get('/ukk-fm/nasional', 'UjianfmController@showUkknfm')->name('ujian.ukknfm');
+    Route::get('/tryout1fm', 'UjianfmController@showTryout1')->name('ujian.fm.tryout1');
+    Route::get('/tryout2fm', 'UjianfmController@showTryout2')->name('ujian.fm.tryout2');
+    Route::get('/tryout3fm', 'UjianfmController@showTryout3')->name('ujian.fm.tryout3');
+    Route::get('/gladifm', 'UjianfmController@showGladi')->name('ujian.fm.gladi');
+    Route::get('/unbkfm', 'UjianfmController@showUnbk')->name('ujian.fm.unbk');
+    Route::get('/usbnfm', 'UjianfmController@showUsbn')->name('ujian.fm.usbn');
 
     // Login
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('siswa.login');

@@ -6,6 +6,7 @@ use App\Siswa;
 use App\Ujian1;
 use App\Ujian2;
 use App\ukknasional;
+use App\ukknasfm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -37,18 +38,20 @@ class UjianController extends Controller
 
     public function showUps()
     {
-        $idsiswa = Auth::guard('siswa')->user()->nis_id;
-        $dataups = Ujian1::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
-        return view('siswa.ujian.ups')->with(compact('dataups'));
+        // $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        // $dataups = Ujian1::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        // return view('siswa.ujian.ups')->with(compact('dataups'));
+        // return view('siswa.ujian.restricted');
+        return redirect()->back();
     }
 
     public function showUkk2()
     {
-        // $idsiswa = Auth::guard('siswa')->user()->nis_id;
-        // $dataukk2 = Ujian2::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
-        // return view('siswa.ujian.ukk2')->with(compact('dataukk2'));
+        $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        $dataukk2 = Ujian2::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
+        return view('siswa.ujian.ukk2')->with(compact('dataukk2'));
 
-        return view('siswa.ujian.restricted');
+        // return view('siswa.ujian.restricted');
     }
 
     public function showTpp()
@@ -61,14 +64,16 @@ class UjianController extends Controller
     {
         $idsiswa = Auth::guard('siswa')->user()->nis_id;
         $ukknas = ukknasional::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
-        // return view('siswa.ujian.ukknas')->with(compact('ukknas'));
-        return view('siswa.ujian.restricted');
-        // return ($ukknas);
+        return view('siswa.ujian.ukknas')->with(compact('ukknas'));
+
+        // return view('siswa.ujian.restricted');
     }
+
 
     public function showTryout1()
     {
         return view('siswa.ujian.tryout1');
+
     }
 
     public function showTryout2()

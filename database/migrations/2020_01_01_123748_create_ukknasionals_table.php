@@ -17,15 +17,15 @@ class CreateUkknasionalsTable extends Migration
             $table->increments('id');
             $table->string('no_ujian');
             $table->string('nis_id');
-            $table->string('hari_bakteri1');
-            $table->string('waktu_bakteri1');
-            $table->string('ruang_bakteri1');
-            $table->string('hari_bakteri2');
-            $table->string('waktu_bakteri2');
-            $table->string('ruang_bakteri2');
-            $table->string('hari_hema');
-            $table->string('waktu_hema');
-            $table->string('ruang_hema');
+            $table->string('hari_sampel');
+            $table->string('waktu_sampel');
+            $table->string('ruang_sampel');
+            $table->string('hari_praktikusk');
+            $table->string('waktu_praktikusk');
+            $table->string('ruang_praktikusk');
+            $table->string('hari_input');
+            $table->string('waktu_input');
+            $table->string('ruang_input');
             $table->timestamps();
         });
     }

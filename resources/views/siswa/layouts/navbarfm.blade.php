@@ -7,7 +7,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="{{ url('/siswa') }}" class="nav-link">Home</a>
+                    <a href="{{ url('/siswa') }}" class="nav-link">Home Farmasi</a>
                 </li>
             </ul>
 
@@ -57,7 +57,7 @@
                   <!-- Add icons to the links using the .nav-icon class
                        with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href=" {{ route('siswa.identitas') }} " class="nav-link">
+                        <a href=" {{ route('siswa.identitasfm') }} " class="nav-link">
                             <i class="nav-icon fas fa-user-circle"></i>
                             <p class="text">Identitas Data Pribadi</p>
                         </a>
@@ -73,14 +73,14 @@
 
                 <!-- Start UKK -->
                 <li class="nav-item">
-                <a href="{{ route('ujian.ukk2') }}" class="nav-link">
+                <a href="{{ route('ujian.ukksfm') }}" class="nav-link">
                     <i class="nav-icon fas fa-prescription text-primary"></i>
-                    <p>UKK Sekolah</p>
+                    <p>UKK Sekolah FM</p>
                 </a>
                 <li class="nav-item">
-                <a href="{{ route('ujian.ukknas') }}" class="nav-link">
+                <a href="{{ route('ujian.ukknfm') }}" class="nav-link">
                     <i class="nav-icon fas fa-prescription text-fuchsia"></i>
-                    <p>UKK Nasional</p>
+                    <p>UKK Nasional FM</p>
                 </a>
                 </li>
                 <!-- End UKK -->
@@ -93,19 +93,19 @@
                         </a>
                         <ul class="nav nav-treeview">
                           <li class="nav-item" style="margin-left:10px">
-                            <a href="{{ route('ujian.tryout1') }}" class="nav-link">
+                            <a href="{{ route('ujian.fm.tryout1') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>
                               <p>TRY OUT 1</p>
                             </a>
                           </li>
                           <li class="nav-item" style="margin-left:10px">
-                            <a href="{{ route('ujian.tryout2') }}" class="nav-link">
+                            <a href="{{ route('ujian.fm.tryout2') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>
                               <p>TRY OUT 2</p>
                             </a>
                           </li>
                           <li class="nav-item" style="margin-left:10px">
-                            <a href="{{ route('ujian.tryout3') }}" class="nav-link">
+                            <a href="{{ route('ujian.fm.tryout3') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>
                               <p>TRY OUT 3</p>
                             </a>
@@ -114,19 +114,19 @@
                       </li>
                     <!-- End Try Out -->
                     <li class="nav-item">
-                        <a href="{{ route('ujian.gladi') }}" class="nav-link">
+                        <a href="{{ route('ujian.fm.gladi') }}" class="nav-link">
                             <i class="nav-icon fas fa-edit text-warning"></i>
                             <p class="text">Gladi Bersih UNBK</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('ujian.unbk') }}" class="nav-link">
+                        <a href="{{ route('ujian.fm.unbk') }}" class="nav-link">
                             <i class="nav-icon fas fa-laptop-medical text-danger"></i>
                             <p class="text">UNBK<i class="right fas fa-exclamation-circle text-warning"></i></p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('ujian.usbn') }}" class="nav-link">
+                        <a href="{{ route('ujian.fm.usbn') }}" class="nav-link">
                             <i class="nav-icon fas fa-laptop text-danger"></i>
                             <p class="text">USBN<i class="right fas fa-exclamation-circle text-warning"></i></p>
                         </a>
