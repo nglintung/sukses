@@ -31,12 +31,18 @@
                             <li class="list-group-item">
                                 No Ujian<a class="float-right text-bold">{{ $ukknas->no_ujian }}</a>
                             </li>
+                            <li class="list-group-item">
+                                Kode Kelompok<a class="float-right text-bold" style="font-size:16pt">{{$ukknas->kode_kelompok}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Nama Asesor<a class="float-right text-bold" style="font-size:16pt">{{$ukknas->asesor}}</a>
+                            </li>
                             {{-- Hari 1 --}}
                             <li class="list-group-item">
                                 <h5 class="text-succes text-bold">Teori Pengantar Praktek</h5>
                             </li>
                             <li class="list-group-item">
-                                Ruang Ujian<a class="float-right text-bold">R. 1 s.d 6</a>
+                                Ruang Ujian<a class="float-right text-bold">Ruang 1 s.d Ruang 10</a>
                             </li>
                             <li class="list-group-item">
                                 Hari<a class="float-right text-bold">Senin, 20 Januari 2020</a>

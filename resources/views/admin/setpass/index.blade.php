@@ -69,7 +69,7 @@ document.getElementById("reset").addEventListener("click",function(evt){
     var codeEntered = document.getElementById("password").value.trim();
     // For each different code, use location.href to redirect the user
     switch (codeEntered) {
-        case "1324":
+        case "7321":
             location.href = "{{route('admin.resetpass')}}";
             break;
         default:

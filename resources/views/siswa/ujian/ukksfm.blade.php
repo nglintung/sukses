@@ -31,6 +31,9 @@
                             <li class="list-group-item">
                                 No Ujian<a class="float-right text-bold">{{ $ukknasfm->no_ujian }}</a>
                             </li>
+                            <li class="list-group-item">
+                                Kode Kelompok<a class="float-right text-bold" style="font-size:16pt">{{$ukknasfm->kode_kelompok}}</a>
+                            </li>
                             {{-- Hari 1 --}}
                             <li class="list-group-item">
                                 <h5 class="text-fuchsia text-bold">Praktek Ilmu Resep dan Administrasi</h5>

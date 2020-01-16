@@ -32,10 +32,13 @@
                                 No Ujian<a class="float-right text-bold" style="font-size:16pt">{{$dataukk2->no_ujian}}</a>
                             </li>
                             <li class="list-group-item">
+                                Kode Kelompok<a class="float-right text-bold" style="font-size:16pt">{{$dataukk2->kode_kelompok}}</a>
+                            </li>
+                            <li class="list-group-item">
                                 <h5 class="text-succes text-bold">Teori Pengantar Praktek</h5>
                             </li>
                             <li class="list-group-item">
-                                Ruang Ujian<a class="float-right text-bold">{{$dataukk2->ruang_tpp}}</a>
+                                Ruang Ujian<a class="float-right text-bold">Ruang 1 s.d Ruang 10</a>
                             </li>
                             <li class="list-group-item">
                                 Hari<a class="float-right text-bold">{{$dataukk2->hari_tpp}}</a>
