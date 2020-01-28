@@ -72,7 +72,7 @@
                 </li> --}}
 
                 <!-- Start UKK -->
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                 <a href="{{ route('ujian.ukk2') }}" class="nav-link">
                     <i class="nav-icon fas fa-prescription text-primary"></i>
                     <p>UKK Sekolah</p>
@@ -82,7 +82,7 @@
                     <i class="nav-icon fas fa-prescription text-fuchsia"></i>
                     <p>UKK Nasional</p>
                 </a>
-                </li>
+                </li> --}}
                 <!-- End UKK -->
 
                 <!-- Start Try Out -->
@@ -92,12 +92,12 @@
                           <p>TRY OUT UNBK<i class="right fas fa-angle-left"></i></p>
                         </a>
                         <ul class="nav nav-treeview">
-                          <li class="nav-item" style="margin-left:10px">
+                          {{-- <li class="nav-item" style="margin-left:10px">
                             <a href="{{ route('ujian.tryout1') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>
                               <p>TRY OUT 1</p>
                             </a>
-                          </li>
+                          </li> --}}
                           <li class="nav-item" style="margin-left:10px">
                             <a href="{{ route('ujian.tryout2') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>

@@ -39,10 +39,10 @@
                             </li>
                             {{-- Hari 1 --}}
                             <li class="list-group-item">
-                                <h5 class="text-succes text-bold">Teori Pengantar Praktek</h5>
+                                <h5 class="text-succes text-bold">UJI DAFTAR PERTANYAAN TULIS (DPT)</h5>
                             </li>
                             <li class="list-group-item">
-                                Ruang Ujian<a class="float-right text-bold">Ruang 1 s.d Ruang 10</a>
+                                Ruang Ujian<a class="float-right text-bold">{{$ukknas->ruang_dpt_ak}}</a>
                             </li>
                             <li class="list-group-item">
                                 Hari<a class="float-right text-bold">Senin, 20 Januari 2020</a>

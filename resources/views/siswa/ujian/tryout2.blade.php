@@ -25,11 +25,62 @@
         <section class="content ml-3">
             <div class="container-fluid">
                 <div class="card">
-                <div class="card-header bg-danger">Perhatian !!</div>
+                <div class="card-header bg-danger"></div>
                     <div class="card-body" >
-                        <h4 class="card-title">Mohon Maaf, untuk sementara Halaman ini belum dapat di tampilkan.</h4>
-                        <p class="card-text"></p>
-                    </div>
+                        <ul class="list-group list-group-unbordered mb-3">
+                            {{-- Hari 1 --}}
+                            <li class="list-group-item">
+                                <h5 class="text-succes text-bold">Detail Peserta</h5>
+                            </li>
+                            <li class="list-group-item">
+                                No. Peserta<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->nopes}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Nama<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->peserta}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Ruang<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->ruang}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Client<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->client}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Server<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->server}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Sesi<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->sesi}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                Waktu<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->waktu}}</a>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="text-primary text-bold">Rabu, 29 Januari 2020</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Mapel<a class="float-right text-bold" style="font-size:16pt">Bahasa Indonesia</a>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="text-primary text-bold">Kamis, 30 Januari 2020</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Mapel<a class="float-right text-bold" style="font-size:16pt">Matematika</a>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="text-primary text-bold">Jumat, 31 Januari 2020</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Mapel<a class="float-right text-bold" style="font-size:16pt">Bahasa Inggris</a>
+                            </li>
+                            <li class="list-group-item">
+                                <h5 class="text-primary text-bold">Sabtu, 1 Februari 2020</h5>
+                            </li>
+                            <li class="list-group-item">
+                                Mapel<a class="float-right text-bold" style="font-size:16pt">Teori Kejuruan (Assesmen)</a>
+                            </li>
+
+
+                        </ul>
+            </div>
                 </div>
             </div>
 

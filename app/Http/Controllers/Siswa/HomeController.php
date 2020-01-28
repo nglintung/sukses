@@ -27,12 +27,12 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index() {
-        $ceklogin = Auth::guard('siswa')->user()->nis_id;
-        if($ceklogin >= 17210){
+        // $ceklogin = Auth::guard('siswa')->user()->nis_id;
+        // if($ceklogin >= 17210){
 
-            return view('siswa.homefarmasi');
-        }
-        else
+        //     return view('siswa.homefarmasi');
+        // }
+        // else
 
         return view('siswa.home');
     }

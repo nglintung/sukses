@@ -7,6 +7,7 @@ use App\Ujian1;
 use App\Ujian2;
 use App\ukknasional;
 use App\ukknasfm;
+use App\tryout2;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth;
@@ -72,14 +73,18 @@ class UjianController extends Controller
 
     public function showTryout1()
     {
+
         return view('siswa.ujian.tryout1');
 
     }
 
     public function showTryout2()
     {
+        $idsiswa = Auth::guard('siswa')->user()->nis_id;
+        $tryout2 = tryout2::where('nis_id', 'like', "%" . $idsiswa . "%")->first();
 
-        return view('siswa.ujian.tryout2');
+        return view('siswa.ujian.tryout2')->with(compact('tryout2'));
+        // return ($tryout2);
     }
 
     public function showTryout3()
