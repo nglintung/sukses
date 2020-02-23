@@ -1,6 +1,6 @@
 @extends('siswa.layouts.sbadmin')
 @section('title')
-    <title>SUKSES UN 2020 KARTEK2</title>
+    <title>SUKSES UN 2020 KARTEK 2</title>
 @endsection
 
 @section('bodytag')
@@ -16,7 +16,7 @@
             <div class="container-fluid">
             <div class="row mb-2">
                     <div class="col-sm-12">
-                        <h3>Ujian TRY OUT UNBK Ke - 2</h3>
+                        <h3>Ujian TRY OUT UNBK Ke - 3</h3>
                 </div>
             </div><!-- /.container-fluid -->
         </section>
@@ -54,25 +54,25 @@
                                 Waktu<a class="float-right text-bold" style="font-size:16pt">{{$tryout2->waktu}}</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-primary text-bold">Rabu, 29 Januari 2020</h5>
+                                <h5 class="text-primary text-bold">Senin, 2 Maret 2020</h5>
                             </li>
                             <li class="list-group-item">
                                 Mapel<a class="float-right text-bold" style="font-size:16pt">Bahasa Indonesia</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-primary text-bold">Kamis, 30 Januari 2020</h5>
+                                <h5 class="text-primary text-bold">Selasa, 3 Maret 2020</h5>
                             </li>
                             <li class="list-group-item">
                                 Mapel<a class="float-right text-bold" style="font-size:16pt">Matematika</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-primary text-bold">Jumat, 31 Januari 2020</h5>
+                                <h5 class="text-primary text-bold">Rabu, 4 Maret 2020</h5>
                             </li>
                             <li class="list-group-item">
                                 Mapel<a class="float-right text-bold" style="font-size:16pt">Bahasa Inggris</a>
                             </li>
                             <li class="list-group-item">
-                                <h5 class="text-primary text-bold">Sabtu, 1 Februari 2020</h5>
+                                <h5 class="text-primary text-bold">Kamis, 5 Maret 2020</h5>
                             </li>
                             <li class="list-group-item">
                                 Mapel<a class="float-right text-bold" style="font-size:16pt">Teori Kejuruan (Assesmen)</a>

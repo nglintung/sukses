@@ -147,7 +147,7 @@
                     </li>
 
                     <!-- USK Password -->
-                                        <li class="nav-item has-treeview">
+                                        {{-- <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                                 <i class="fas fa-key nav-icon text-warning"></i>
                                 <p>Password USK<i class="right fas fa-arrow-circle-left text-warning"></i></p>
@@ -167,7 +167,7 @@
                             </li>
 
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

@@ -101,24 +101,18 @@
                           <li class="nav-item" style="margin-left:10px">
                             <a href="{{ route('ujian.tryout2') }}" class="nav-link">
                               <i class="far fa-check-square nav-icon"></i>
-                              <p>TRY OUT 2</p>
-                            </a>
-                          </li>
-                          <li class="nav-item" style="margin-left:10px">
-                            <a href="{{ route('ujian.tryout3') }}" class="nav-link">
-                              <i class="far fa-check-square nav-icon"></i>
                               <p>TRY OUT 3</p>
                             </a>
                           </li>
-                        </ul>
+			</ul>
                       </li>
                     <!-- End Try Out -->
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ route('ujian.gladi') }}" class="nav-link">
                             <i class="nav-icon fas fa-edit text-warning"></i>
                             <p class="text">Gladi Bersih UNBK</p>
                         </a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a href="{{ route('ujian.unbk') }}" class="nav-link">
                             <i class="nav-icon fas fa-laptop-medical text-danger"></i>

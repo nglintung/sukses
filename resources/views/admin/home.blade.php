@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-6">
+            {{-- <div class="col-lg-3 col-6">
                 <!-- small card -->
                 <div class="small-box bg-warning">
                     <div class="inner">
@@ -79,7 +79,7 @@
                     Info Lebih Lanjut <i class="fas fa-arrow-circle-right"></i>
                     </a>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
         <!-- /.row -->
